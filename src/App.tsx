@@ -9,32 +9,29 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import Navbar from './components/navbar/navbar';
+import Main from './components/page/main/main';
+import Portfolio from './components/page/portfolio/portfolio';
+import About from './components/page/about/about';
 
 const App: React.FC = () => {
   return (
-    <Router basename='/portfolio'>
-      
-      <div className="main">
-        <nav>
-            <ul>
-                <li><a href="/">HOME</a></li>
-                <li><a href="/">ABOUT</a></li>
-                <li><a href="/">PORTFOLIO</a></li>
-                <li><a href="/">SERVICES</a></li>
-                <li><a href="/">HIRE ME</a></li>
-            </ul>
-        </nav>
-        </div>
-    <Switch>
-      {/* Changing content comes here */}
-      <Route exact path='/' component={MyFirstComponent} />
-      <Route exact path='/example' component={SomeExampleComponent}/>
-    </Switch>
+    <div className={styles.container}>
+      <Router basename='/portfolio'>
+        <Navbar />
+    
+        <Switch>
+          {/* Changing content comes here */}
+          <Route exact path='/main' component={ Main} />
+          <Route exact path='/portfolio' component={Portfolio}/>
+          <Route exact path='/about' component={About}/>
+        </Switch>
 
-    {/* The footer and other components you want to display on all pages come here */}
-    <ClickCount />
+        {/* The footer and other components you want to display on all pages come here */}
+        {/* <ClickCo  unt /> */}
 
-  </Router>
+      </Router>
+    </div>
     
   )
 }

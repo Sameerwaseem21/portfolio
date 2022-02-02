@@ -1,0 +1,27 @@
+.container{
+     background: rgb(0, 0, 0);
+
+     display: flex;
+     width: 84%;
+     margin: auto;
+     padding: 20px 30px;
+     align-items: center;
+     justify-content: center;
+     //padding-left: 0%;
+}
+
+.container .links li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+}
+
+.container .links li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+    &:hover {
+        color: rgb(233, 8, 253);
+    }
+}
