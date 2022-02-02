@@ -14,12 +14,17 @@ const App: React.FC = () => {
   return (
     <Router basename='/portfolio'>
       
-    {/* The navigation bar and other components you want to display on all pages come here */}
-    <div className={styles.navbar}>
-      <Link to='/'>Front page</Link>
-      <Link to='example'>Look my example component</Link>
-    </div>
-
+      <div className="main">
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/">ABOUT</a></li>
+                <li><a href="/">PORTFOLIO</a></li>
+                <li><a href="/">SERVICES</a></li>
+                <li><a href="/">HIRE ME</a></li>
+            </ul>
+        </nav>
+        </div>
     <Switch>
       {/* Changing content comes here */}
       <Route exact path='/' component={MyFirstComponent} />
