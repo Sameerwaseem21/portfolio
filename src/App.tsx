@@ -13,13 +13,13 @@ import project from './components/page/projects/projects'
 const App: React.FC = () => {
   return (
     <div className={styles.container}>
-      <Router basename='/portfolio'>
+      <Router>
         <Navbar />
     
         <Switch>
           {/* Changing content comes here */}
           <Route exact path='/' component={Main} />
-          <Route exact path='/portfol1o' component={portfolio}/>
+          <Route exact path='/portfolio' component={portfolio}/>
           <Route exact path='/project' component={project}/>
         </Switch>
 
