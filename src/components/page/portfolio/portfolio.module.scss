@@ -1,12 +1,43 @@
-.imgB {
-    position: relative;
-    animation: myfirst 1s normal forwards ease-in-out;
-  }
-  
-  @keyframes myfirst {
-    0%   {left:-1100px; top:0px;}
-    25%  {left:-1100px; top:0px;}
-    50%  {left:-1100px; top:0px;}
-    75%  {left:0px; top:0px;}
-    100% {left:0px; top:0px;}
-  }
+
+body { background: #090d00; color: rgba(255,255,255,.25); text-align: center; }
+
+.cvintro{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.Introduction,.education,.headings,.skills,.workexp,.languages {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font: 700 1.5em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+/* Animate Background Image */
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+/* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+}
+
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+0% { background-position: 0% 50%; }
+100% { background-position: 100% 50%; }
+}
+
+
+.txtDiv,.txtDiv1,.txtDiv2,.txtDiv3,.txtDiv4 {
+  margin-bottom: 20px;
+  font-size: 11px;
+}
