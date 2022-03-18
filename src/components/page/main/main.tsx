@@ -29,7 +29,7 @@ const Main: React.FC<MainProps> = () => {
           </div>
 
           <div className={styles.gitImgemail}>
-          <a href="mailto:sairwaseem2015@hotmail.com"><img className={styles.gitImgemail} src="https://www.svgrepo.com/show/13898/email.svg"></img></a>
+          <a href="mailto:sairwaseem2015@hotmail.com"><img className={styles.gitImgemail} src="https://www.svgrepo.com/show/13898/email.svg"alt="gitrepo"></img></a>
           </div>
 
 
