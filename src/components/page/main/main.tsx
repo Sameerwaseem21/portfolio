@@ -1,5 +1,10 @@
 import React from 'react'
 import styles from './main.module.scss'
+import pic1 from '../../../media/email.svg';
+import pic2 from '../../../media/instagram.svg';
+import pic3 from '../../../media/Linkedin-Logo.png';
+
+
 
 type MainProps = {
 
@@ -16,22 +21,13 @@ const Main: React.FC<MainProps> = () => {
       </p>
 
       <div className={styles.txtDiv}>
-          <h1 className={styles.cvintro}><br></br><br></br>Hi welcome to my Portfolio.For contacting me you can see down below.</h1>
-           </div>
-
-
-           <div className={styles.gitImg}>
-          <a href="https://www.instagram.com/sameerwaseem21/?hl=en"><img className={styles.gitImg2} src="https://www.svgrepo.com/show/111199/instagram.svg"  alt="gitrepo"></img></a>
-          </div>
-
-          <div className={styles.gitImgin}>
-          <a href="https://www.linkedin.com/in/sameer-waseem-28b768230/"><img className={styles.gitImgin} src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg"alt="gitrepo"></img></a>
-          </div>
-
-          <div className={styles.gitImgemail}>
-          <a href="mailto:sairwaseem2015@hotmail.com"><img className={styles.gitImgemail} src="https://www.svgrepo.com/show/13898/email.svg"alt="gitrepo"></img></a>
-          </div>
-
+        <h1 className={styles.cvintro}><br></br><br></br>Hi welcome to my Portfolio.For contacting me you can see down below.</h1>
+      </div>
+      <div className={styles.container}>
+      <a href='mailto:sairwaseem2015@hotmail.com'><img src={pic1} alt='asd' /></a>
+      <a href='https://www.instagram.com/sameerwaseem21/?hl=en'><img src={pic2} alt='asd' /></a>
+      <a href='https://www.linkedin.com/in/sameer-waseem-28b768230/'><img src={pic3} alt='asd' /></a>
+    </div>
 
 
 

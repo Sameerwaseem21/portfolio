@@ -63,16 +63,15 @@ margin-top: 160px;
   margin-bottom: 20px;
   font-size: 11px;
 }
+
 .gitImg1,.gitImg2{
 
   width: 80px;
   height: auto;
   position:absolute;
   left: 480px;
-  
-
-
 }
+
 .gitImgin{
   width: 220Px;  
   height: auto;
@@ -87,4 +86,16 @@ margin-top: 160px;
   position:absolute;
   left: 550px;
   top: 178px
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container img {
+  height: 80px;
+  margin: 110px;
+  // width: 80px;
 }
