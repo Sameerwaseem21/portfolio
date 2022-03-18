@@ -14,10 +14,10 @@ const Projects: React.FC<ProjectsProps> = () => {
             <p className={styles.Introduction}>GitHub</p>
             </div>
          <div className={styles.gitImg}>
-          <a href="https://github.com/Sameerwaseem21/portfolio"><img src="https://gh-card.dev/repos/Sameerwaseem21/portfolio.svg?fullname="  alt="gitrepo"></img></a>
+          <a href="https://github.com/Sameerwaseem21/portfolio"><img className={styles.gitImg1} src="https://gh-card.dev/repos/Sameerwaseem21/portfolio.svg?fullname="  alt="gitrepo"></img></a>
           </div>
           <div className={styles.gitImg}>
-          <a href="https://github.com/varia-ict/varia-agile-20C-ryhma-3"><img src="https://gh-card.dev/repos/varia-ict/varia-agile-20C-ryhma-3.svg?fullname="  alt="gitrepo"></img></a>
+          <a href="https://github.com/varia-ict/varia-agile-20C-ryhma-3"><img className={styles.gitImg2} src="https://gh-card.dev/repos/varia-ict/varia-agile-20C-ryhma-3.svg?fullname="  alt="gitrepo"></img></a>
           </div>
 
            <div className={styles.headings}>
