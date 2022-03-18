@@ -10,12 +10,12 @@ const Main: React.FC<MainProps> = () => {
     <div className={style.container}>
       
       <p>
-  
-  <span>
-    Sameer Waseem
-  </span>
- 
-</p>
+        <span>
+          Sameer Waseem
+        </span>
+      </p>
+
+
     </div>
   )
 }
