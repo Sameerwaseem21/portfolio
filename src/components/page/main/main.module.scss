@@ -49,6 +49,42 @@ p {
 }
 
 
+.txtDiv{
+margin-top: 160px;
+}
 @media screen and (max-width: 760px) {
   
+}
+.cvintro{
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.txtDiv,.txtDiv1,.txtDiv2,.txtDiv3,.txtDiv4 {
+  margin-bottom: 20px;
+  font-size: 11px;
+}
+.gitImg1,.gitImg2{
+
+  width: 80px;
+  height: auto;
+  position:absolute;
+  left: 480px;
+  
+
+
+}
+.gitImgin{
+  width: 220Px;  
+  height: auto;
+  position:absolute;
+  left:370px;
+  top:200px;
+  
+}
+.gitImgemail{
+  width: 150px;
+  height: auto;
+  position:absolute;
+  left: 550px;
+  top: 178px
 }
